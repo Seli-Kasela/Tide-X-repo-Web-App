@@ -13,7 +13,7 @@ const maps = 'https://www.google.com/maps/search/?api=1&query=Ossy+Surf+Trip+Bal
 function Mark() {
   return (
     <Link href="/" className="focus-ring flex items-center gap-3" data-testid="link-brand">
-      <span className="flex h-9 w-9 items-center justify-center bg-primary text-background"><Waves size={20} strokeWidth={2.5} /></span>
+      <img src="/tide-x-logo.jpg" alt="Tide-X Surf School" className="h-12 w-12 rounded-full border border-primary/50 object-cover object-center shadow-[0_0_24px_rgba(74,215,232,.18)]" />
       <span className="leading-none"><strong className="font-display block text-[15px] tracking-[.02em]">SURF TRIP<span className="text-primary">TIDE-X</span></strong><small className="mt-1 block font-mono text-[8px] tracking-[.24em] text-muted-foreground">BALI / BALANGAN BEACH</small></span>
     </Link>
   );
