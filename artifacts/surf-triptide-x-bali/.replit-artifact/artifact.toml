@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Surf TripTide-X Bali"
+description = "A cinematic surf school website for Ossy Surf Trip Bali at Balangan Beach, with Home, About, Services, and Contact pages plus direct WhatsApp, email, YouTube, location, and map links."
+version = "1.0.0"
+id = "artifacts/surf-triptide-x-bali"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19998
+
+[services.development]
+run = "pnpm --filter @workspace/surf-triptide-x-bali run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/surf-triptide-x-bali", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/surf-triptide-x-bali/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19998"
+BASE_PATH = "/"
