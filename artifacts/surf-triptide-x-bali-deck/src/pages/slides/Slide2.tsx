@@ -1,0 +1,10 @@
+import siteReference from '@assets/Website_Design_(Based_on_Reference)_20260716_085502_0000_1787309323841.png';
+
+export default function Slide2() {
+  return <div className="relative h-screen w-screen overflow-hidden bg-[#edf6f6]">
+    <div className="absolute right-0 top-0 h-full w-[43vw] bg-[#c6e3e4]" /><div className="relative flex h-full flex-col px-[7vw] py-[6vh]">
+      <div className="flex justify-between border-b border-[#1a365d]/20 pb-[3vh]"><div className="font-bold uppercase tracking-[.12em] text-[1.5vw] text-[#1a365d]">Surf TripTide-X Bali</div><div className="font-mono text-[1.5vw] uppercase tracking-[.15em] text-[#536878]">02 / Place</div></div>
+      <div className="grid flex-1 grid-cols-[1fr_.9fr] items-center gap-[5vw]"><div><p className="font-mono text-[1.5vw] uppercase tracking-[.2em] text-[#2c8ca8]">Balangan Beach · Bali</p><h2 className="mt-[2vh] max-w-[39vw] font-display text-[5.8vw] leading-[.98] tracking-[-.04em] text-[#1a365d]">The place sets the <span className="text-[#2c8ca8]">tone.</span></h2><div className="mt-[5vh] max-w-[37vw] space-y-[2vh] text-[2vw] leading-[1.4] text-[#536878]"><p>Balangan Beach, South Kuta, Bali</p><p>A local surf experience shaped by reef, tide, limestone and light</p><p>Morning sessions, thoughtful coaching and time in the water</p></div></div><div className="relative h-[67vh] overflow-hidden rounded-[1.5vw] shadow-[0_2vh_5vh_rgba(26,54,93,.16)]"><img src={siteReference} crossOrigin="anonymous" alt="Cinematic surf school website reference" className="h-full w-full object-cover object-top" /><div className="absolute inset-0 bg-gradient-to-t from-[#071b2b]/60 via-transparent to-transparent" /><div className="absolute bottom-[3vh] left-[3vw] font-mono text-[1.5vw] uppercase tracking-[.16em] text-white">A local read of the coast</div></div></div>
+    </div>
+  </div>;
+}

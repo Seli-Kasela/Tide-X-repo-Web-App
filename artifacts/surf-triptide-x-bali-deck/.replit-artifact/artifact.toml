@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/surf-triptide-x-bali-deck/"
+title = "Surf TripTide-X Bali Project Deck"
+description = "An Ocean Breeze presentation introducing Surf TripTide-X Bali, Ossy Surf Trip Bali at Balangan Beach, the website experience, services, official prices, and booking details."
+version = "1.0.0"
+id = "artifacts/surf-triptide-x-bali-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/surf-triptide-x-bali-deck/" ]
+localPort = 22671
+
+[services.development]
+run = "pnpm --filter @workspace/surf-triptide-x-bali-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/surf-triptide-x-bali-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/surf-triptide-x-bali-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22671"
+BASE_PATH = "/surf-triptide-x-bali-deck/"
