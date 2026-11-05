@@ -20,4 +20,11 @@ path = "scripts/post-merge.sh"
 timeoutMs = 20000
 
 [objectStorage]
-defaultBucketID = "replit-objstore-e42f7d19-f733-4d45-9cf5-c436b0682aa4"
+defaultBucketID = "replit-objstore-fc68b777-10eb-482e-a6be-3b30068c61b4"
+
+[userenv]
+
+[userenv.shared]
+
+[userenv.shared.GJ2jXfUaRVu9bC5ijGMQ9GZo]
+"Azf4AYnS2NmjxrBZe8lV8Y8IhOKVsrvyEe0F2n9X+JPqL+B2xL4yM9rqXisVg==" = "Ossy Surf Trip Tide-X Bali"
