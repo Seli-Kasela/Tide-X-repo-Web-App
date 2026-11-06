@@ -77,7 +77,7 @@ BASE_PATH = "/__mockup"
 [[workflows.workflow]]
 name = "artifacts/surf-triptide-x-bali: web"
 author = "agent"
-mode = "parallel"
+mode = "sequential"
 
 [workflows.workflow.metadata]
 outputType = "webview"
@@ -123,6 +123,10 @@ author = 64282068
 [[workflows.workflow.tasks]]
 task = "workflow.run"
 args = "Google Connect Sync Application Content"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Seli Kasela "
 
 [agent]
 stack = "PNPM_WORKSPACE"
