@@ -158,3 +158,9 @@ localPort = 22671
 
 [objectStorage]
 defaultBucketID = "replit-objstore-e42f7d19-f733-4d45-9cf5-c436b0682aa4"
+
+[userenv]
+
+[userenv.shared]
+"Client id" = "114252283325660302266"
+"1064567894771-l8icb740lf73v1kt5i9ab55i30r8cl56.apps.googleusercontent.com" = "Client id"
